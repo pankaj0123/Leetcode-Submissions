@@ -19,7 +19,12 @@ public:
         
         for(int i=1;i<=n-1;i++)
         {
-            if((helper(a.substr(0,i),b.substr(n-i,i)) && helper(a.substr(i,n-i),b.substr(0,n-i))) || (helper(a.substr(0,i),b.substr(0,i)) && helper(a.substr(i,n-i),b.substr(i,n-i))))
+            if(helper(a.substr(0,i),b.substr(n-i,i)) && helper(a.substr(i,n-i),b.substr(0,n-i)))
+            {
+                flag=true;
+                break;
+            }
+            if((helper(a.substr(0,i),b.substr(0,i)) && helper(a.substr(i,n-i),b.substr(i,n-i))))
             {
                 flag=true;
                 break;
