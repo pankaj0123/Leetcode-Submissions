@@ -11,10 +11,10 @@ public:
             int l=i-1;
             int r=i+1;
             
-            while(l>=0 && s[i]==s[l])
-            {
-                l--;
-            }
+            // while(l>=0 && s[i]==s[l])
+            // {
+            //     l--;
+            // }
             while(r<n && s[i]==s[r])
             {
                 r++;
